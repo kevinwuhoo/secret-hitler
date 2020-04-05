@@ -740,9 +740,9 @@ module.exports.accounts = torIpsParam => {
 		res.send(`Current GetIPIntel counter is at ${getIPIntelCounter.count} - resets in ${(getIPIntelCounter.reset - new Date()) / 1000 / 60} minutes`);
 	});
 
-	app.get('/discord-login', passport.authenticate('discord'));
+	// app.get('/discord-login', passport.authenticate('discord'));
 
-	app.get('/github-login', passport.authenticate('github', { scope: ['read:user', 'user:email'] }));
+	// app.get('/github-login', passport.authenticate('github', { scope: ['read:user', 'user:email'] }));
 
 	const oAuthAuthentication = (req, res, next, type) => {
 		const ip = req.expandedIP;

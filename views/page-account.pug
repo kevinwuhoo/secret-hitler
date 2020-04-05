@@ -13,26 +13,26 @@ block content
 					= email
 			else
 				span(style="color: bisque") None
-		h3.ui.centered.header(style="color: #e3f83d; margin: 0") Discord integration: 
-			if discordUsername
-				span(style="color: royalblue")
-					= discordUsername
-					span #
-					= discordDiscriminator
-					if isLocal
-						a(href="/revoke-discord") - Click here to unlink your Discord account
-			else
-				span(style="color: bisque") None 
-					a(href="/discord-login", style="color: orange; text-decoration: underline") - Click here to link your Discord account
-		h3.ui.centered.header(style="color: #e3f83d; margin: 0") Github integration: 
-			if githubUsername
-				span(style="color: royalblue")
-					= githubUsername
-					if isLocal
-						a(href="/revoke-github") - Click here to unlink your Github account
-			else
-				span(style="color: bisque") None 
-					a(href="/github-login", style="color: orange; text-decoration: underline") - Click here to link your Github account
+		//- h3.ui.centered.header(style="color: #e3f83d; margin: 0") Discord integration: 
+		//- 	if discordUsername
+		//- 		span(style="color: royalblue")
+		//- 			= discordUsername
+		//- 			span #
+		//- 			= discordDiscriminator
+		//- 			if isLocal
+		//- 				a(href="/revoke-discord") - Click here to unlink your Discord account
+		//- 	else
+		//- 		span(style="color: bisque") None 
+		//- 			a(href="/discord-login", style="color: orange; text-decoration: underline") - Click here to link your Discord account
+		//- h3.ui.centered.header(style="color: #e3f83d; margin: 0") Github integration: 
+		//- 	if githubUsername
+		//- 		span(style="color: royalblue")
+		//- 			= githubUsername
+		//- 			if isLocal
+		//- 				a(href="/revoke-github") - Click here to unlink your Github account
+		//- 	else
+		//- 		span(style="color: bisque") None 
+		//- 			a(href="/github-login", style="color: orange; text-decoration: underline") - Click here to link your Github account
 		if email
 			if !verified
 				button#request-verification.ui.primary.button(style="display: block; margin: 5px auto 0;") Request a new verification email
